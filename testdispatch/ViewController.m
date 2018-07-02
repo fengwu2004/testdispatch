@@ -25,7 +25,7 @@
   
   [super viewDidAppear:animated];
   
-  [self testNotUpdateUiInMainQueue];
+  [self testDispatchBarrier];
 }
 
 - (void)testMainThreadAndMainQueue {
@@ -56,15 +56,107 @@
   });
 }
 
+- (void)testDispatchGroup {
+  
+  dispatch_group_t group = dispatch_group_create();
+  
+  dispatch_group_enter(group);
+  
+  dispatch_group_notify(group, dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0), ^{
+    
+    NSLog(@"finish");
+  });
+  
+  NSLog(@"zz");
+  
+  dispatch_group_leave(group);
+}
+
+- (void)testDispatchBarrier {
+  
+  dispatch_queue_t queue = dispatch_queue_create("my_queue", DISPATCH_QUEUE_CONCURRENT);
+  
+  dispatch_group_t group = dispatch_group_create();
+  
+  dispatch_group_async(group, queue, ^{
+    
+    dispatch_apply(1, queue, ^(size_t index) {
+      
+      dispatch_async(queue, ^{
+        
+        NSLog(@"test");
+      });
+      
+      NSLog(@"%d", (int)index);
+    });
+  });
+  
+  dispatch_barrier_async(queue, ^{
+    
+    NSLog(@"all finish");
+  });
+  
+  dispatch_group_notify(group, queue, ^{
+    
+    NSLog(@"group finish");
+  });
+  
+  NSLog(@"zz");
+}
+
 - (void)testTargetQueue {
   
-  dispatch_queue_t basequeue = dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0);
+  dispatch_queue_t serialQueue = dispatch_queue_create("serialQueue", 0);
   
-  dispatch_queue_t queue0 = dispatch_queue_create("queue0", 0);
+  dispatch_queue_t concurrentTargetQueue = dispatch_queue_create("concurrentTargetQueue", DISPATCH_QUEUE_CONCURRENT);
+
+  dispatch_queue_t concurrentQueue0 = dispatch_queue_create("concurrentQueue0", DISPATCH_QUEUE_CONCURRENT);
   
-  dispatch_set_target_queue(queue0, basequeue);
+  dispatch_queue_t concurrentQueue = dispatch_queue_create("concurrentQueue1", DISPATCH_QUEUE_CONCURRENT);
   
+  dispatch_set_target_queue(concurrentQueue, concurrentTargetQueue);
   
+  dispatch_async(concurrentQueue, ^{
+    
+    NSLog(@"0");
+  });
+  
+  dispatch_async(concurrentQueue, ^{
+    
+    NSLog(@"1");
+  });
+  
+  dispatch_async(concurrentQueue, ^{
+    
+    NSLog(@"2");
+  });
+  
+  dispatch_async(concurrentQueue, ^{
+    
+    NSLog(@"3");
+  });
+  
+  dispatch_async(concurrentQueue, ^{
+    
+    NSLog(@"4");
+  });
+  
+  dispatch_async(concurrentQueue, ^{
+    
+    NSLog(@"5");
+  });
+  
+  dispatch_async(concurrentQueue, ^{
+    
+    NSLog(@"6");
+  });
+  
+  dispatch_set_target_queue(concurrentQueue0, concurrentTargetQueue);
+  
+  dispatch_async(concurrentQueue0, ^{
+    
+    NSLog(@"ok");
+  });
 }
 
 - (void)doSomeTest {
@@ -126,31 +218,6 @@
   
   dispatch_main();
 
-//  dispatch_async(serialQueue, ^{
-//
-//    NSLog(@"2");
-//  });
-//
-//  dispatch_async(serialQueue, ^{
-//
-//    NSLog(@"3");
-//  });
-//
-//  dispatch_async(serialQueue, ^{
-//
-//    NSLog(@"4");
-//  });
-//
-//  dispatch_async(serialQueue, ^{
-//
-//    NSLog(@"5");
-//  });
-//
-//  dispatch_async(serialQueue, ^{
-//
-//    NSLog(@"6");
-//  });
-  
   NSLog(@"finish");
 }
 
