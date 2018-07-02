@@ -79,16 +79,16 @@
   dispatch_group_t group = dispatch_group_create();
   
   dispatch_group_async(group, queue, ^{
-    
+
     dispatch_apply(1, queue, ^(size_t index) {
-      
+
       dispatch_async(queue, ^{
-        
-        NSLog(@"test");
+
+        NSLog(@"%d", (int)index);
       });
-      
-      NSLog(@"%d", (int)index);
     });
+    
+    NSLog(@"a");
   });
   
   dispatch_barrier_async(queue, ^{
