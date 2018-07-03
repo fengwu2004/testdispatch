@@ -25,7 +25,7 @@
   
   [super viewDidAppear:animated];
   
-  [self testDispatchBarrier];
+  [self testsyncgroup];
 }
 
 - (void)testMainThreadAndMainQueue {
@@ -42,6 +42,63 @@
   });
   
   NSLog(@"finish");
+}
+
+- (void)testCustomDispatchApply {
+  
+  dispatch_queue_t queue = dispatch_queue_create("serial queue", NULL);
+  
+  [self customImplement_dispatchApply:queue block:^(size_t index) {
+    
+    NSLog(@"%d", (int)index);
+    
+  } iterator:100];
+  
+  NSLog(@"finish");
+}
+
+- (void)testsyncgroup {
+  
+  dispatch_queue_t serialQueue = dispatch_queue_create(NULL, 0);
+  
+  dispatch_group_t group = dispatch_group_create();
+  
+  dispatch_sync(serialQueue, ^{
+    
+    dispatch_group_async(group, serialQueue, ^{
+      
+      NSLog(@"a");
+    });
+    
+    dispatch_group_async(group, serialQueue, ^{
+      
+      NSLog(@"b");
+    });
+    
+    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+  });
+  
+  NSLog(@"finish");
+}
+
+- (void)customImplement_dispatchApply:(dispatch_queue_t)queue block:(void (^)(size_t))block iterator:(size_t)iterator {
+  
+  dispatch_group_t group = dispatch_group_create();
+  
+  dispatch_sync(queue, ^{
+    
+    NSLog(@"start");
+    
+    for (int i = 0; i < iterator; ++i) {
+      
+      dispatch_group_async(group, queue, ^{
+        
+        block(i);
+      });
+    }
+    
+    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+  });
 }
 
 - (void)testNotUpdateUiInMainQueue {
@@ -72,36 +129,60 @@
   dispatch_group_leave(group);
 }
 
+- (void)testDeadLock {
+  
+  dispatch_queue_t concurrentqueue = dispatch_queue_create("concurrentqueue", dispatch_queue_attr_make_with_qos_class(NULL, QOS_CLASS_DEFAULT, 0));
+  
+  dispatch_async(concurrentqueue, ^{
+    
+    NSLog(@"c");
+    
+    dispatch_sync(concurrentqueue, ^{
+      
+      NSLog(@"a");
+    });
+    
+    NSLog(@"b");
+  });
+  
+  dispatch_sync(concurrentqueue, ^{
+    
+    dispatch_sync(concurrentqueue, ^{
+      
+      NSLog(@"dead lock?");
+    });
+  });
+}
+
 - (void)testDispatchBarrier {
   
   dispatch_queue_t queue = dispatch_queue_create("my_queue", DISPATCH_QUEUE_CONCURRENT);
   
-  dispatch_group_t group = dispatch_group_create();
+  NSLog(@"start");
   
-  dispatch_group_async(group, queue, ^{
+  dispatch_block_t blockDispatchApply = ^{
 
-    dispatch_apply(1, queue, ^(size_t index) {
-
-      dispatch_async(queue, ^{
-
-        NSLog(@"%d", (int)index);
-      });
-    });
-    
     NSLog(@"a");
+  
+    dispatch_apply(1, queue, ^(size_t index) {
+      
+      NSLog(@"b");
+    });
+  };
+  
+  dispatch_async(queue, ^{
+
+    blockDispatchApply();
+    
+    NSLog(@"c");
   });
   
   dispatch_barrier_async(queue, ^{
     
-    NSLog(@"all finish");
+    NSLog(@"d");
   });
   
-  dispatch_group_notify(group, queue, ^{
-    
-    NSLog(@"group finish");
-  });
-  
-  NSLog(@"zz");
+  NSLog(@"end");
 }
 
 - (void)testTargetQueue {
