@@ -25,7 +25,57 @@
   
   [super viewDidAppear:animated];
   
-  [self testsyncgroup];
+  [self testDispatchContext];
+}
+
+- (void)testDispatchAfter {
+  
+  NSLog(@"start");
+  
+  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC * 10), dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), ^{
+    
+    NSLog(@"finish");
+  });
+}
+
+void finalizer(void *context) {
+  
+  if (!context) {
+    
+    return;
+  }
+  
+  const char* str = (const char*)context;
+  
+  printf("%s", str);
+}
+
+- (void)testDispatchContext {
+  
+  dispatch_queue_t queue = dispatch_queue_create("my_queue", DISPATCH_QUEUE_SERIAL);
+  
+  dispatch_block_t block = dispatch_block_create(DISPATCH_BLOCK_DETACHED, ^{
+    
+    NSLog(@"finish");
+  });
+  
+  dispatch_set_finalizer_f(queue, finalizer);
+  
+  dispatch_set_context(queue, "Hello word");
+  
+  dispatch_async(queue, block);
+}
+
+- (void)testBackgroundQueue {
+  
+  dispatch_queue_t queue = dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0);
+  
+  dispatch_async(queue, ^{
+    
+    BOOL isMianThread = [NSThread isMainThread];
+    
+    NSLog(@"主线程 %d", isMianThread);
+  });
 }
 
 - (void)testMainThreadAndMainQueue {
@@ -307,5 +357,36 @@
   [super didReceiveMemoryWarning];
 }
 
+- (void)testDispatchWait {
+  
+  dispatch_queue_t queue = dispatch_queue_create("test_queue", dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_CONCURRENT, QOS_CLASS_BACKGROUND, 0));
+  
+  dispatch_block_t no_qos_block = dispatch_block_create(DISPATCH_BLOCK_NO_QOS_CLASS, ^{
+    
+    NSLog(@"no_qos");
+  });
+  
+  dispatch_block_t inherit_qos_block = dispatch_block_create(DISPATCH_BLOCK_INHERIT_QOS_CLASS, ^{
+    
+    NSLog(@"inherit_qos");
+  });
+  
+  dispatch_qos_class_t qos = dispatch_queue_get_qos_class(dispatch_get_main_queue(), NULL);
+  
+  NSLog(@"%d", qos);
+  
+  dispatch_async(queue, ^{
+    
+    inherit_qos_block();
+  });
+  
+  for (NSInteger i = 0; i < 1; ++i) {
+    
+    dispatch_async(queue, ^{
+      
+      no_qos_block();
+    });
+  }
+}
 
 @end
