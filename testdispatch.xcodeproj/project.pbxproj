@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C71455620EF082B00735394 /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71455520EF082B00735394 /* KVCViewController.m */; };
+		2C71455920EF13C800735394 /* kvcObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71455820EF13C800735394 /* kvcObject.m */; };
+		2C71455C20EF88B100735394 /* dispatchSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71455B20EF88B100735394 /* dispatchSourceViewController.m */; };
 		2CCA424D20EBA8E3001980B9 /* TestIntance.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA424C20EBA8E3001980B9 /* TestIntance.m */; };
 		2CCA425220ECDDFC001980B9 /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA425120ECDDFC001980B9 /* OperationViewController.m */; };
 		2CCE50E820E7870A000921C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE50E720E7870A000921C6 /* AppDelegate.m */; };
@@ -18,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C71455420EF082B00735394 /* KVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCViewController.h; sourceTree = "<group>"; };
+		2C71455520EF082B00735394 /* KVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCViewController.m; sourceTree = "<group>"; };
+		2C71455720EF13C800735394 /* kvcObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kvcObject.h; sourceTree = "<group>"; };
+		2C71455820EF13C800735394 /* kvcObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kvcObject.m; sourceTree = "<group>"; };
+		2C71455A20EF88B100735394 /* dispatchSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dispatchSourceViewController.h; sourceTree = "<group>"; };
+		2C71455B20EF88B100735394 /* dispatchSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dispatchSourceViewController.m; sourceTree = "<group>"; };
 		2CCA424B20EBA8E3001980B9 /* TestIntance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestIntance.h; sourceTree = "<group>"; };
 		2CCA424C20EBA8E3001980B9 /* TestIntance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestIntance.m; sourceTree = "<group>"; };
 		2CCA425020ECDDFC001980B9 /* OperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
@@ -77,6 +86,12 @@
 				2CCA424C20EBA8E3001980B9 /* TestIntance.m */,
 				2CCA425020ECDDFC001980B9 /* OperationViewController.h */,
 				2CCA425120ECDDFC001980B9 /* OperationViewController.m */,
+				2C71455420EF082B00735394 /* KVCViewController.h */,
+				2C71455520EF082B00735394 /* KVCViewController.m */,
+				2C71455720EF13C800735394 /* kvcObject.h */,
+				2C71455820EF13C800735394 /* kvcObject.m */,
+				2C71455A20EF88B100735394 /* dispatchSourceViewController.h */,
+				2C71455B20EF88B100735394 /* dispatchSourceViewController.m */,
 			);
 			path = testdispatch;
 			sourceTree = "<group>";
@@ -152,10 +167,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CCE50EB20E7870A000921C6 /* ViewController.m in Sources */,
+				2C71455C20EF88B100735394 /* dispatchSourceViewController.m in Sources */,
 				2CCE50F620E7870E000921C6 /* main.m in Sources */,
 				2CCA425220ECDDFC001980B9 /* OperationViewController.m in Sources */,
+				2C71455620EF082B00735394 /* KVCViewController.m in Sources */,
 				2CCA424D20EBA8E3001980B9 /* TestIntance.m in Sources */,
 				2CCE50E820E7870A000921C6 /* AppDelegate.m in Sources */,
+				2C71455920EF13C800735394 /* kvcObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
