@@ -25,7 +25,7 @@
   
   [super viewDidAppear:animated];
   
-  [self testDispatchContext];
+  [self barrier];
 }
 
 - (void)testDispatchAfter {
@@ -202,6 +202,24 @@ void finalizer(void *context) {
       NSLog(@"dead lock?");
     });
   });
+}
+
+- (void)barrier {
+  
+  dispatch_queue_t queue = dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0);
+  
+  NSLog(@"start");
+  
+  NSLog(@"isMainThread %d", [NSThread isMainThread]);
+  
+  dispatch_async(queue, ^{
+    
+    NSLog(@"%d isMainThread %d", 1, [NSThread isMainThread]);
+  });
+  
+  NSLog(@"isMainThread %d", [NSThread isMainThread]);
+  
+  NSLog(@"finish");
 }
 
 - (void)testDispatchBarrier {
