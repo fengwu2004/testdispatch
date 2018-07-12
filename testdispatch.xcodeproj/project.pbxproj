@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C347CFD20F6F00E0018F037 /* TestNsPortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C347CFC20F6F00E0018F037 /* TestNsPortViewController.m */; };
+		2C347D0020F705DF0018F037 /* MyWorkerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C347CFF20F705DF0018F037 /* MyWorkerClass.m */; };
+		2C347D0320F706750018F037 /* MachPortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C347D0220F706750018F037 /* MachPortViewController.m */; };
 		2C71455620EF082B00735394 /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71455520EF082B00735394 /* KVCViewController.m */; };
 		2C71455920EF13C800735394 /* kvcObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71455820EF13C800735394 /* kvcObject.m */; };
 		2C71455C20EF88B100735394 /* dispatchSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71455B20EF88B100735394 /* dispatchSourceViewController.m */; };
@@ -21,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C347CFB20F6F00E0018F037 /* TestNsPortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNsPortViewController.h; sourceTree = "<group>"; };
+		2C347CFC20F6F00E0018F037 /* TestNsPortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNsPortViewController.m; sourceTree = "<group>"; };
+		2C347CFE20F705DF0018F037 /* MyWorkerClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWorkerClass.h; sourceTree = "<group>"; };
+		2C347CFF20F705DF0018F037 /* MyWorkerClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWorkerClass.m; sourceTree = "<group>"; };
+		2C347D0120F706750018F037 /* MachPortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachPortViewController.h; sourceTree = "<group>"; };
+		2C347D0220F706750018F037 /* MachPortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachPortViewController.m; sourceTree = "<group>"; };
 		2C71455420EF082B00735394 /* KVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCViewController.h; sourceTree = "<group>"; };
 		2C71455520EF082B00735394 /* KVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCViewController.m; sourceTree = "<group>"; };
 		2C71455720EF13C800735394 /* kvcObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kvcObject.h; sourceTree = "<group>"; };
@@ -92,6 +101,12 @@
 				2C71455820EF13C800735394 /* kvcObject.m */,
 				2C71455A20EF88B100735394 /* dispatchSourceViewController.h */,
 				2C71455B20EF88B100735394 /* dispatchSourceViewController.m */,
+				2C347CFB20F6F00E0018F037 /* TestNsPortViewController.h */,
+				2C347CFC20F6F00E0018F037 /* TestNsPortViewController.m */,
+				2C347CFE20F705DF0018F037 /* MyWorkerClass.h */,
+				2C347CFF20F705DF0018F037 /* MyWorkerClass.m */,
+				2C347D0120F706750018F037 /* MachPortViewController.h */,
+				2C347D0220F706750018F037 /* MachPortViewController.m */,
 			);
 			path = testdispatch;
 			sourceTree = "<group>";
@@ -166,13 +181,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C347D0020F705DF0018F037 /* MyWorkerClass.m in Sources */,
 				2CCE50EB20E7870A000921C6 /* ViewController.m in Sources */,
 				2C71455C20EF88B100735394 /* dispatchSourceViewController.m in Sources */,
 				2CCE50F620E7870E000921C6 /* main.m in Sources */,
+				2C347D0320F706750018F037 /* MachPortViewController.m in Sources */,
 				2CCA425220ECDDFC001980B9 /* OperationViewController.m in Sources */,
 				2C71455620EF082B00735394 /* KVCViewController.m in Sources */,
 				2CCA424D20EBA8E3001980B9 /* TestIntance.m in Sources */,
 				2CCE50E820E7870A000921C6 /* AppDelegate.m in Sources */,
+				2C347CFD20F6F00E0018F037 /* TestNsPortViewController.m in Sources */,
 				2C71455920EF13C800735394 /* kvcObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
