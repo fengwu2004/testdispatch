@@ -8,6 +8,7 @@
 
 #import "KVCViewController.h"
 #import "kvcObject.h"
+#import "KVOObject+Array.h"
 
 @interface KVCViewController ()
 

@@ -7,12 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C239F8A210E9A2600F3A3FD /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C239F89210E9A2600F3A3FD /* SwiftViewController.swift */; };
+		2C239F8C210F30B900F3A3FD /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C239F8B210F30B900F3A3FD /* Solution.swift */; };
+		2C239F8E210F429D00F3A3FD /* RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C239F8D210F429D00F3A3FD /* RotateArray.swift */; };
+		2C239F90211005E800F3A3FD /* ContainsDuplicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C239F8F211005E800F3A3FD /* ContainsDuplicate.swift */; };
+		2C239F92211054C500F3A3FD /* TestInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C239F91211054C500F3A3FD /* TestInit.swift */; };
+		2C239F942110890F00F3A3FD /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C239F932110890F00F3A3FD /* Foods.swift */; };
 		2C347CFD20F6F00E0018F037 /* TestNsPortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C347CFC20F6F00E0018F037 /* TestNsPortViewController.m */; };
 		2C347D0020F705DF0018F037 /* MyWorkerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C347CFF20F705DF0018F037 /* MyWorkerClass.m */; };
 		2C347D0320F706750018F037 /* MachPortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C347D0220F706750018F037 /* MachPortViewController.m */; };
+		2C4425A2210202700088B629 /* TestMetaClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4425A1210202700088B629 /* TestMetaClass.m */; };
+		2C4425A521032BAF0088B629 /* TestArcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4425A421032BAF0088B629 /* TestArcViewController.m */; };
+		2C4D7B8B2112AD1300F4212C /* ThreadSafeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D7B8A2112AD1300F4212C /* ThreadSafeDictionary.swift */; };
+		2C4D7BB02117D35100F4212C /* NSMutableDictionary+ThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D7BAF2117D35100F4212C /* NSMutableDictionary+ThreadSafe.m */; };
+		2C4D7BB62118648D00F4212C /* TestErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D7BB52118648D00F4212C /* TestErrorHandler.swift */; };
+		2C4D7BB7211870C700F4212C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D7BAC2115B4C700F4212C /* Item.swift */; };
+		2C61A40721280C0C00CE69A2 /* FPSIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A40621280C0C00CE69A2 /* FPSIndicator.swift */; };
+		2C61A40A212B979E00CE69A2 /* TestMessageForwardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A409212B979E00CE69A2 /* TestMessageForwardingViewController.m */; };
+		2C61A40D212B9B2200CE69A2 /* TestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A40C212B9B2200CE69A2 /* TestObj.m */; };
+		2C61A410212B9F8100CE69A2 /* UnrecognazieResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A40F212B9F8100CE69A2 /* UnrecognazieResolver.m */; };
+		2C61A413212BA0D300CE69A2 /* TestObjBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A412212BA0D300CE69A2 /* TestObjBase.m */; };
+		2C61A416212BB65F00CE69A2 /* KVOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A415212BB65F00CE69A2 /* KVOObject.m */; };
+		2C61A419212E460700CE69A2 /* KVOObject+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A418212E460700CE69A2 /* KVOObject+Array.m */; };
+		2C6CF06F211C66B9006528A2 /* TestInoutParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CF06E211C66B9006528A2 /* TestInoutParams.swift */; };
+		2C6CF071211FD039006528A2 /* TestFactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CF070211FD039006528A2 /* TestFactoryMethod.swift */; };
+		2C6CF07321216128006528A2 /* LifeCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CF07221216128006528A2 /* LifeCycleViewController.swift */; };
+		2C6CF07721217873006528A2 /* CALayerPerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CF07621217873006528A2 /* CALayerPerformanceViewController.swift */; };
+		2C6CF0792121A4D1006528A2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CF0782121A4D1006528A2 /* TableViewCell.swift */; };
 		2C71455620EF082B00735394 /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71455520EF082B00735394 /* KVCViewController.m */; };
 		2C71455920EF13C800735394 /* kvcObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71455820EF13C800735394 /* kvcObject.m */; };
 		2C71455C20EF88B100735394 /* dispatchSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71455B20EF88B100735394 /* dispatchSourceViewController.m */; };
+		2CA05D192127FC61001FF3A5 /* TestTimerPreciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA05D182127FC61001FF3A5 /* TestTimerPreciseViewController.swift */; };
+		2CBE615520F842FF00E41E2D /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE615420F842FF00E41E2D /* RunLoopViewController.m */; };
+		2CBE615820F9DAA000E41E2D /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE615720F9DAA000E41E2D /* Worker.m */; };
+		2CBE615B20F9DB7900E41E2D /* PortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE615A20F9DB7900E41E2D /* PortViewController.m */; };
+		2CBE615E20FB5B7100E41E2D /* DispatchSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE615D20FB5B7100E41E2D /* DispatchSemaphoreViewController.m */; };
+		2CBE616120FC34F100E41E2D /* CustomInputSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE616020FC34F100E41E2D /* CustomInputSourceViewController.m */; };
+		2CBE616420FC38FF00E41E2D /* RunLoopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE616320FC38FF00E41E2D /* RunLoopSource.m */; };
+		2CBE616B20FC4D9D00E41E2D /* RunLoopContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE616920FC4D9D00E41E2D /* RunLoopContext.m */; };
 		2CCA424D20EBA8E3001980B9 /* TestIntance.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA424C20EBA8E3001980B9 /* TestIntance.m */; };
 		2CCA425220ECDDFC001980B9 /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA425120ECDDFC001980B9 /* OperationViewController.m */; };
 		2CCE50E820E7870A000921C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE50E720E7870A000921C6 /* AppDelegate.m */; };
@@ -24,18 +56,70 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C239F88210E9A2500F3A3FD /* testdispatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testdispatch-Bridging-Header.h"; sourceTree = "<group>"; };
+		2C239F89210E9A2600F3A3FD /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		2C239F8B210F30B900F3A3FD /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
+		2C239F8D210F429D00F3A3FD /* RotateArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateArray.swift; sourceTree = "<group>"; };
+		2C239F8F211005E800F3A3FD /* ContainsDuplicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainsDuplicate.swift; sourceTree = "<group>"; };
+		2C239F91211054C500F3A3FD /* TestInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInit.swift; sourceTree = "<group>"; };
+		2C239F932110890F00F3A3FD /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
 		2C347CFB20F6F00E0018F037 /* TestNsPortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNsPortViewController.h; sourceTree = "<group>"; };
 		2C347CFC20F6F00E0018F037 /* TestNsPortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNsPortViewController.m; sourceTree = "<group>"; };
 		2C347CFE20F705DF0018F037 /* MyWorkerClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWorkerClass.h; sourceTree = "<group>"; };
 		2C347CFF20F705DF0018F037 /* MyWorkerClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWorkerClass.m; sourceTree = "<group>"; };
 		2C347D0120F706750018F037 /* MachPortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachPortViewController.h; sourceTree = "<group>"; };
 		2C347D0220F706750018F037 /* MachPortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachPortViewController.m; sourceTree = "<group>"; };
+		2C4425A0210202700088B629 /* TestMetaClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMetaClass.h; sourceTree = "<group>"; };
+		2C4425A1210202700088B629 /* TestMetaClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMetaClass.m; sourceTree = "<group>"; };
+		2C4425A321032BAF0088B629 /* TestArcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestArcViewController.h; sourceTree = "<group>"; };
+		2C4425A421032BAF0088B629 /* TestArcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestArcViewController.m; sourceTree = "<group>"; };
+		2C4D7B8A2112AD1300F4212C /* ThreadSafeDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeDictionary.swift; sourceTree = "<group>"; };
+		2C4D7BAC2115B4C700F4212C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2C4D7BAE2117D32F00F4212C /* NSMutableDictionary+ThreadSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+ThreadSafe.h"; sourceTree = "<group>"; };
+		2C4D7BAF2117D35100F4212C /* NSMutableDictionary+ThreadSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ThreadSafe.m"; sourceTree = "<group>"; };
+		2C4D7BB52118648D00F4212C /* TestErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestErrorHandler.swift; sourceTree = "<group>"; };
+		2C4D7BBB21194F2900F4212C /* TestDispatchIntrospectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDispatchIntrospectionViewController.h; sourceTree = "<group>"; };
+		2C4D7BBC21194F2900F4212C /* TestDispatchIntrospectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDispatchIntrospectionViewController.m; sourceTree = "<group>"; };
+		2C5C49C7211A72760071CD6C /* TestProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProtocal.swift; sourceTree = "<group>"; };
+		2C61A40621280C0C00CE69A2 /* FPSIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPSIndicator.swift; sourceTree = "<group>"; };
+		2C61A408212B979E00CE69A2 /* TestMessageForwardingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMessageForwardingViewController.h; sourceTree = "<group>"; };
+		2C61A409212B979E00CE69A2 /* TestMessageForwardingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMessageForwardingViewController.m; sourceTree = "<group>"; };
+		2C61A40B212B9B2200CE69A2 /* TestObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObj.h; sourceTree = "<group>"; };
+		2C61A40C212B9B2200CE69A2 /* TestObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObj.m; sourceTree = "<group>"; };
+		2C61A40E212B9F8100CE69A2 /* UnrecognazieResolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnrecognazieResolver.h; sourceTree = "<group>"; };
+		2C61A40F212B9F8100CE69A2 /* UnrecognazieResolver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnrecognazieResolver.m; sourceTree = "<group>"; };
+		2C61A411212BA0D300CE69A2 /* TestObjBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjBase.h; sourceTree = "<group>"; };
+		2C61A412212BA0D300CE69A2 /* TestObjBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjBase.m; sourceTree = "<group>"; };
+		2C61A414212BB65F00CE69A2 /* KVOObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOObject.h; sourceTree = "<group>"; };
+		2C61A415212BB65F00CE69A2 /* KVOObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOObject.m; sourceTree = "<group>"; };
+		2C61A417212E460700CE69A2 /* KVOObject+Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KVOObject+Array.h"; sourceTree = "<group>"; };
+		2C61A418212E460700CE69A2 /* KVOObject+Array.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KVOObject+Array.m"; sourceTree = "<group>"; };
+		2C6CF06E211C66B9006528A2 /* TestInoutParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInoutParams.swift; sourceTree = "<group>"; };
+		2C6CF070211FD039006528A2 /* TestFactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactoryMethod.swift; sourceTree = "<group>"; };
+		2C6CF07221216128006528A2 /* LifeCycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycleViewController.swift; sourceTree = "<group>"; };
+		2C6CF07621217873006528A2 /* CALayerPerformanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerPerformanceViewController.swift; sourceTree = "<group>"; };
+		2C6CF0782121A4D1006528A2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2C71455420EF082B00735394 /* KVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCViewController.h; sourceTree = "<group>"; };
 		2C71455520EF082B00735394 /* KVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCViewController.m; sourceTree = "<group>"; };
 		2C71455720EF13C800735394 /* kvcObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kvcObject.h; sourceTree = "<group>"; };
 		2C71455820EF13C800735394 /* kvcObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kvcObject.m; sourceTree = "<group>"; };
 		2C71455A20EF88B100735394 /* dispatchSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dispatchSourceViewController.h; sourceTree = "<group>"; };
 		2C71455B20EF88B100735394 /* dispatchSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dispatchSourceViewController.m; sourceTree = "<group>"; };
+		2CA05D182127FC61001FF3A5 /* TestTimerPreciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTimerPreciseViewController.swift; sourceTree = "<group>"; };
+		2CBE615320F842FF00E41E2D /* RunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
+		2CBE615420F842FF00E41E2D /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
+		2CBE615620F9DAA000E41E2D /* Worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		2CBE615720F9DAA000E41E2D /* Worker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
+		2CBE615920F9DB7900E41E2D /* PortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortViewController.h; sourceTree = "<group>"; };
+		2CBE615A20F9DB7900E41E2D /* PortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortViewController.m; sourceTree = "<group>"; };
+		2CBE615C20FB5B7100E41E2D /* DispatchSemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSemaphoreViewController.h; sourceTree = "<group>"; };
+		2CBE615D20FB5B7100E41E2D /* DispatchSemaphoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreViewController.m; sourceTree = "<group>"; };
+		2CBE615F20FC34F100E41E2D /* CustomInputSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomInputSourceViewController.h; sourceTree = "<group>"; };
+		2CBE616020FC34F100E41E2D /* CustomInputSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomInputSourceViewController.m; sourceTree = "<group>"; };
+		2CBE616320FC38FF00E41E2D /* RunLoopSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopSource.m; sourceTree = "<group>"; };
+		2CBE616520FC41B100E41E2D /* RunLoopSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopSource.h; sourceTree = "<group>"; };
+		2CBE616920FC4D9D00E41E2D /* RunLoopContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopContext.m; sourceTree = "<group>"; };
+		2CBE616A20FC4D9D00E41E2D /* RunLoopContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopContext.h; sourceTree = "<group>"; };
 		2CCA424B20EBA8E3001980B9 /* TestIntance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestIntance.h; sourceTree = "<group>"; };
 		2CCA424C20EBA8E3001980B9 /* TestIntance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestIntance.m; sourceTree = "<group>"; };
 		2CCA425020ECDDFC001980B9 /* OperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
@@ -68,6 +152,7 @@
 			children = (
 				2CCE50E520E7870A000921C6 /* testdispatch */,
 				2CCE50E420E7870A000921C6 /* Products */,
+				2C239F88210E9A2500F3A3FD /* testdispatch-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +167,9 @@
 		2CCE50E520E7870A000921C6 /* testdispatch */ = {
 			isa = PBXGroup;
 			children = (
+				2C239F89210E9A2600F3A3FD /* SwiftViewController.swift */,
+				2CBE615C20FB5B7100E41E2D /* DispatchSemaphoreViewController.h */,
+				2CBE615D20FB5B7100E41E2D /* DispatchSemaphoreViewController.m */,
 				2CCE50E620E7870A000921C6 /* AppDelegate.h */,
 				2CCE50E720E7870A000921C6 /* AppDelegate.m */,
 				2CCE50E920E7870A000921C6 /* ViewController.h */,
@@ -105,8 +193,56 @@
 				2C347CFC20F6F00E0018F037 /* TestNsPortViewController.m */,
 				2C347CFE20F705DF0018F037 /* MyWorkerClass.h */,
 				2C347CFF20F705DF0018F037 /* MyWorkerClass.m */,
+				2CBE616A20FC4D9D00E41E2D /* RunLoopContext.h */,
+				2CBE616920FC4D9D00E41E2D /* RunLoopContext.m */,
 				2C347D0120F706750018F037 /* MachPortViewController.h */,
 				2C347D0220F706750018F037 /* MachPortViewController.m */,
+				2CBE615320F842FF00E41E2D /* RunLoopViewController.h */,
+				2CBE615420F842FF00E41E2D /* RunLoopViewController.m */,
+				2CBE615620F9DAA000E41E2D /* Worker.h */,
+				2CBE615720F9DAA000E41E2D /* Worker.m */,
+				2CBE615920F9DB7900E41E2D /* PortViewController.h */,
+				2CBE615A20F9DB7900E41E2D /* PortViewController.m */,
+				2CBE615F20FC34F100E41E2D /* CustomInputSourceViewController.h */,
+				2CBE616020FC34F100E41E2D /* CustomInputSourceViewController.m */,
+				2CBE616320FC38FF00E41E2D /* RunLoopSource.m */,
+				2CBE616520FC41B100E41E2D /* RunLoopSource.h */,
+				2C4425A0210202700088B629 /* TestMetaClass.h */,
+				2C4425A1210202700088B629 /* TestMetaClass.m */,
+				2C4425A321032BAF0088B629 /* TestArcViewController.h */,
+				2C4425A421032BAF0088B629 /* TestArcViewController.m */,
+				2C239F8B210F30B900F3A3FD /* Solution.swift */,
+				2C239F8D210F429D00F3A3FD /* RotateArray.swift */,
+				2C239F8F211005E800F3A3FD /* ContainsDuplicate.swift */,
+				2C239F91211054C500F3A3FD /* TestInit.swift */,
+				2C239F932110890F00F3A3FD /* Foods.swift */,
+				2C4D7BAC2115B4C700F4212C /* Item.swift */,
+				2C4D7B8A2112AD1300F4212C /* ThreadSafeDictionary.swift */,
+				2C4D7BAE2117D32F00F4212C /* NSMutableDictionary+ThreadSafe.h */,
+				2C4D7BAF2117D35100F4212C /* NSMutableDictionary+ThreadSafe.m */,
+				2C4D7BB52118648D00F4212C /* TestErrorHandler.swift */,
+				2C4D7BBB21194F2900F4212C /* TestDispatchIntrospectionViewController.h */,
+				2C4D7BBC21194F2900F4212C /* TestDispatchIntrospectionViewController.m */,
+				2C5C49C7211A72760071CD6C /* TestProtocal.swift */,
+				2C6CF06E211C66B9006528A2 /* TestInoutParams.swift */,
+				2C6CF070211FD039006528A2 /* TestFactoryMethod.swift */,
+				2C6CF07221216128006528A2 /* LifeCycleViewController.swift */,
+				2C6CF07621217873006528A2 /* CALayerPerformanceViewController.swift */,
+				2C6CF0782121A4D1006528A2 /* TableViewCell.swift */,
+				2CA05D182127FC61001FF3A5 /* TestTimerPreciseViewController.swift */,
+				2C61A40621280C0C00CE69A2 /* FPSIndicator.swift */,
+				2C61A408212B979E00CE69A2 /* TestMessageForwardingViewController.h */,
+				2C61A409212B979E00CE69A2 /* TestMessageForwardingViewController.m */,
+				2C61A40B212B9B2200CE69A2 /* TestObj.h */,
+				2C61A40C212B9B2200CE69A2 /* TestObj.m */,
+				2C61A40E212B9F8100CE69A2 /* UnrecognazieResolver.h */,
+				2C61A40F212B9F8100CE69A2 /* UnrecognazieResolver.m */,
+				2C61A411212BA0D300CE69A2 /* TestObjBase.h */,
+				2C61A412212BA0D300CE69A2 /* TestObjBase.m */,
+				2C61A414212BB65F00CE69A2 /* KVOObject.h */,
+				2C61A415212BB65F00CE69A2 /* KVOObject.m */,
+				2C61A417212E460700CE69A2 /* KVOObject+Array.h */,
+				2C61A418212E460700CE69A2 /* KVOObject+Array.m */,
 			);
 			path = testdispatch;
 			sourceTree = "<group>";
@@ -142,6 +278,7 @@
 				TargetAttributes = {
 					2CCE50E220E7870A000921C6 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -181,17 +318,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C239F8E210F429D00F3A3FD /* RotateArray.swift in Sources */,
+				2C61A416212BB65F00CE69A2 /* KVOObject.m in Sources */,
+				2CBE615820F9DAA000E41E2D /* Worker.m in Sources */,
+				2C4D7BB02117D35100F4212C /* NSMutableDictionary+ThreadSafe.m in Sources */,
 				2C347D0020F705DF0018F037 /* MyWorkerClass.m in Sources */,
+				2C4D7BB62118648D00F4212C /* TestErrorHandler.swift in Sources */,
+				2C61A413212BA0D300CE69A2 /* TestObjBase.m in Sources */,
+				2C4425A2210202700088B629 /* TestMetaClass.m in Sources */,
+				2C4425A521032BAF0088B629 /* TestArcViewController.m in Sources */,
+				2C239F8C210F30B900F3A3FD /* Solution.swift in Sources */,
 				2CCE50EB20E7870A000921C6 /* ViewController.m in Sources */,
+				2C6CF07321216128006528A2 /* LifeCycleViewController.swift in Sources */,
+				2CBE616B20FC4D9D00E41E2D /* RunLoopContext.m in Sources */,
+				2C4D7BB7211870C700F4212C /* Item.swift in Sources */,
+				2C6CF071211FD039006528A2 /* TestFactoryMethod.swift in Sources */,
+				2C239F8A210E9A2600F3A3FD /* SwiftViewController.swift in Sources */,
 				2C71455C20EF88B100735394 /* dispatchSourceViewController.m in Sources */,
 				2CCE50F620E7870E000921C6 /* main.m in Sources */,
+				2C61A40721280C0C00CE69A2 /* FPSIndicator.swift in Sources */,
+				2C239F942110890F00F3A3FD /* Foods.swift in Sources */,
+				2CBE616120FC34F100E41E2D /* CustomInputSourceViewController.m in Sources */,
+				2C61A40A212B979E00CE69A2 /* TestMessageForwardingViewController.m in Sources */,
+				2C239F90211005E800F3A3FD /* ContainsDuplicate.swift in Sources */,
+				2C6CF06F211C66B9006528A2 /* TestInoutParams.swift in Sources */,
+				2C6CF0792121A4D1006528A2 /* TableViewCell.swift in Sources */,
 				2C347D0320F706750018F037 /* MachPortViewController.m in Sources */,
 				2CCA425220ECDDFC001980B9 /* OperationViewController.m in Sources */,
 				2C71455620EF082B00735394 /* KVCViewController.m in Sources */,
 				2CCA424D20EBA8E3001980B9 /* TestIntance.m in Sources */,
+				2CBE615520F842FF00E41E2D /* RunLoopViewController.m in Sources */,
+				2CBE616420FC38FF00E41E2D /* RunLoopSource.m in Sources */,
+				2C61A410212B9F8100CE69A2 /* UnrecognazieResolver.m in Sources */,
 				2CCE50E820E7870A000921C6 /* AppDelegate.m in Sources */,
+				2C239F92211054C500F3A3FD /* TestInit.swift in Sources */,
+				2C4D7B8B2112AD1300F4212C /* ThreadSafeDictionary.swift in Sources */,
+				2CBE615E20FB5B7100E41E2D /* DispatchSemaphoreViewController.m in Sources */,
+				2CBE615B20F9DB7900E41E2D /* PortViewController.m in Sources */,
+				2CA05D192127FC61001FF3A5 /* TestTimerPreciseViewController.swift in Sources */,
 				2C347CFD20F6F00E0018F037 /* TestNsPortViewController.m in Sources */,
+				2C61A40D212B9B2200CE69A2 /* TestObj.m in Sources */,
 				2C71455920EF13C800735394 /* kvcObject.m in Sources */,
+				2C6CF07721217873006528A2 /* CALayerPerformanceViewController.swift in Sources */,
+				2C61A419212E460700CE69A2 /* KVOObject+Array.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,15 +500,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8XH67RLAYR;
 				INFOPLIST_FILE = testdispatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yellfun.testdispatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "testdispatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -348,15 +523,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8XH67RLAYR;
 				INFOPLIST_FILE = testdispatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yellfun.testdispatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "testdispatch-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

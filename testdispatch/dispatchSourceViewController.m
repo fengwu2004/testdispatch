@@ -20,7 +20,7 @@
   
   [super viewDidLoad];
   
-  [self testDipatchSourceMemory];
+  [self testFileWrite];
 }
 
 - (void)timerDispatchSource {
@@ -88,7 +88,7 @@ int n = 0;
 
 size_t MyGetData(void* buffer, size_t size) {
   
-  memcpy(buffer, "abcdefghijklmnopqrstuvwxyz", 26);
+  memcpy(buffer, "abcdefghijklmnopqrstuvwxyz", 26 * 1000);
   
   return 26;
 }
@@ -124,7 +124,7 @@ size_t MyGetDataSize() {
     
     free(buffer);
     
-    if (n >= 1000)
+    if (n >= 1000000)
     {
       dispatch_source_cancel(self.source);
     }
@@ -167,26 +167,29 @@ size_t MyGetDataSize() {
     NSLog(@"source %ld", data);
   });
   
-  dispatch_apply(10, queue, ^(size_t index) {
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * index * 1 * NSEC_PER_USEC), queue, ^{
-      
-      dispatch_source_merge_data(self.source, index);
-    });
-  });
+//  dispatch_source_merge_data(self.source, 1);
   
   dispatch_activate(_source);
   
-  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), queue, ^{
+  dispatch_source_set_registration_handler(self.source, ^{
     
-    dispatch_source_set_registration_handler(self.source, ^{
-      
-      NSLog(@"启动");
-    });
+    NSLog(@"启动");
   });
+  
+  NSLog(@"启动111");
+  
+//  dispatch_apply(100, queue, ^(size_t index) {
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * index * NSEC_PER_MSEC), queue, ^{
+//
+//      dispatch_source_merge_data(self.source, 1 * index);
+//    });
+//  });
 }
 
 - (void)didReceiveMemoryWarning {
+  
+  NSLog(@"didReceiveMemoryWarning");
   
   [super didReceiveMemoryWarning];
 }
